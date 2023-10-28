@@ -14,7 +14,7 @@ fl = st.file_uploader(":file_folder: Upload a file",type=(["csv","txt","xlsx","x
 if fl is not None:
     filename = fl.name
     st.write(filename)
-    df = pd.read_excel(filename)
+    df = pd.read_csv(filename, encoding = "ISO-8859-1")
 else:
     os.chdir(r"https:\\github.com\\PriyankaSawant2906\\Streamlit-app\\blob\\main")
     df = pd.read_excel("Sample - Superstore.xls")
