@@ -16,7 +16,7 @@ if fl is not None:
     st.write(filename)
     df = pd.read_excel(filename)
 else:
-    os.chdir(r"D:\\My Documents\\Downloads\\PythonStreamlit-main\\PythonStreamlit-main")
+    os.chdir(r"https:\\github.com\\PriyankaSawant2906\\Streamlit-app\\blob\\main")
     df = pd.read_excel("Sample - Superstore.xls")
 
 col1, col2 = st.columns((2))
